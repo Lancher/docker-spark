@@ -2,6 +2,8 @@
 
 # Run Phase 1
 /usr/spark-2.3.1/bin/spark-submit \
+--total-executor-cores 4 \
+--executor-memory 4g \
 /tmp/data/asu_cse512-master/target/scala-2.11/CSE512-Project-Phase1-Template-assembly-0.1.0.jar \
 /tmp/data/asu_cse512-master/result/output \
 rangequery /tmp/data/asu_cse512-master/src/resources/arealm10000.csv -93.63173,33.0183,-93.359203,33.219456 \
@@ -11,6 +13,8 @@ distancejoinquery /tmp/data/asu_cse512-master/src/resources/arealm10000.csv /tmp
 
 # Run Phase 2
 /usr/spark-2.3.1/bin/spark-submit \
+--total-executor-cores 4 \
+--executor-memory 4g \
 /tmp/data/asu_cse512_phase2-master/target/scala-2.11/CSE512-Hotspot-Analysis-Template-assembly-0.1.0.jar \
 /tmp/data/asu_cse512_phase2-master/result/output \
 hotzoneanalysis \
@@ -18,6 +22,8 @@ hotzoneanalysis \
 /tmp/data/asu_cse512_phase2-master/src/resources/zone-hotzone.csv
 
 /usr/spark-2.3.1/bin/spark-submit \
+--total-executor-cores 4 \
+--executor-memory 4g \
 /tmp/data/asu_cse512_phase2-master/target/scala-2.11/CSE512-Hotspot-Analysis-Template-assembly-0.1.0.jar \
 /tmp/data/asu_cse512_phase2-master/result/output \
 hotcellanalysis \
