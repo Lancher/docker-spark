@@ -51,7 +51,7 @@ worker1:
 worker2:
   image: lancher/docker-spark
   command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://master:7077
-  hostname: worker1
+  hostname: worker2
   environment:
     SPARK_CONF_DIR: /conf
     SPARK_WORKER_CORES: 2
