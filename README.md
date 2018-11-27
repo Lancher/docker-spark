@@ -45,7 +45,7 @@ hotcellanalysis \
 
 # Testing Setting
 
-CPU 1, 3, 5
+Node 1, 3, 5
 Core 2, 4
 Mem 2, 4
 
