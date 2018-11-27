@@ -1,7 +1,7 @@
 
 ## Setup
 1. Install Docker and Docker-Compose on Ubuntu 16.104
-2. Git checkout different branches with different CPU/Mem/Nodes settings.
+2. Git checkout different GitB branches with different CPU/Mem/Nodes settings.
 3. Run `docker exec -it` to get into master node.
 
 ## Run Phase 1
