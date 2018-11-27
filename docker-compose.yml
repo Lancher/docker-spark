@@ -23,14 +23,14 @@ master:
     - ./conf/master:/conf
     - ./data:/tmp/data
 
-worker:
+worker1:
   image: lancher/docker-spark
   command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://master:7077
-  hostname: worker
+  hostname: worker1
   environment:
     SPARK_CONF_DIR: /conf
-    SPARK_WORKER_CORES: 2
-    SPARK_WORKER_MEMORY: 1g
+    SPARK_WORKER_CORES: 4
+    SPARK_WORKER_MEMORY: 4g
     SPARK_WORKER_PORT: 8881
     SPARK_WORKER_WEBUI_PORT: 8081
     SPARK_PUBLIC_DNS: localhost
