@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Run Phase 1
+/usr/spark-2.3.1/bin/spark-submit \
 /tmp/data/asu_cse512-master/target/scala-2.11/CSE512-Project-Phase1-Template-assembly-0.1.0.jar \
 /tmp/data/asu_cse512-master/result/output \
 rangequery /tmp/data/asu_cse512-master/src/resources/arealm10000.csv -93.63173,33.0183,-93.359203,33.219456 \
