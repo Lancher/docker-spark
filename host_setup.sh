@@ -5,3 +5,4 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-compose git
 sudo gpasswd -a $USER docker
+exit
