@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/db/asu_cse512/src/main/scala/cse512/SpatialQuery.scala:17:65: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m      return (p(0) >= q(0)) && (p(1) >= q(1)) && (p(2) <= q(2)) && (p(3) <= q(3))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
